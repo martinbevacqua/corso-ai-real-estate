@@ -134,6 +134,191 @@
         </div>
     </nav>
 
+    <!-- QUIZ INIZIALE: VALUTAZIONE LIVELLO -->
+    <section id="quiz-iniziale" class="module" style="background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);">
+        <div class="container">
+            <div class="module-header animate-on-scroll" style="text-align: center;">
+                <div class="module-badge" style="background: linear-gradient(135deg, var(--warning) 0%, var(--accent-pink) 100%); color: white;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    </svg>
+                    PRIMA DI INIZIARE
+                </div>
+                <h2 class="module-title">Quanto Conosci l'AI?</h2>
+                <p class="module-tagline">5 domande veloci per capire da dove partiamo insieme</p>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: var(--space-4);">
+                    Non preoccuparti delle risposte sbagliate - servono a noi per calibrare il corso!
+                </p>
+            </div>
+
+            <div class="quiz-container" id="quiz-iniziale-container" style="max-width: 800px; margin: 0 auto;">
+
+                <!-- Domanda 1 -->
+                <div class="quiz-question card animate-on-scroll" data-question="1" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--accent-purple); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">1</div>
+                        <h4 style="margin: 0;">Hai mai usato ChatGPT o altri strumenti AI per lavoro?</h4>
+                    </div>
+                    <div class="quiz-options" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q1-init" value="mai" style="width: 20px; height: 20px;">
+                            <span>Mai provato</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q1-init" value="poco" style="width: 20px; height: 20px;">
+                            <span>Qualche volta per curiosita</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q1-init" value="regolare" style="width: 20px; height: 20px;">
+                            <span>Lo uso regolarmente per annunci/email</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q1-init" value="esperto" style="width: 20px; height: 20px;">
+                            <span>Uso avanzato con prompt strutturati</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Domanda 2 -->
+                <div class="quiz-question card animate-on-scroll" data-question="2" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--accent-cyan); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">2</div>
+                        <h4 style="margin: 0;">Cosa significa "allucinazione" nel contesto dell'AI?</h4>
+                    </div>
+                    <div class="quiz-options" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q2-init" value="a" style="width: 20px; height: 20px;">
+                            <span>Quando l'AI genera immagini</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q2-init" value="b" style="width: 20px; height: 20px;">
+                            <span>Quando l'AI inventa informazioni false presentandole come vere</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q2-init" value="c" style="width: 20px; height: 20px;">
+                            <span>Quando l'AI smette di funzionare</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q2-init" value="d" style="width: 20px; height: 20px;">
+                            <span>Non lo so</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Domanda 3 -->
+                <div class="quiz-question card animate-on-scroll" data-question="3" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">3</div>
+                        <h4 style="margin: 0;">Quale di questi dati NON dovresti MAI inserire in ChatGPT?</h4>
+                    </div>
+                    <div class="quiz-options" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q3-init" value="a" style="width: 20px; height: 20px;">
+                            <span>Il prezzo di un immobile in vendita</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q3-init" value="b" style="width: 20px; height: 20px;">
+                            <span>Il codice fiscale di un cliente</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q3-init" value="c" style="width: 20px; height: 20px;">
+                            <span>La descrizione di un appartamento</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q3-init" value="d" style="width: 20px; height: 20px;">
+                            <span>Non lo so</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Domanda 4 -->
+                <div class="quiz-question card animate-on-scroll" data-question="4" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--warning); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">4</div>
+                        <h4 style="margin: 0;">Cos'e un "prompt"?</h4>
+                    </div>
+                    <div class="quiz-options" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q4-init" value="a" style="width: 20px; height: 20px;">
+                            <span>Un tipo di intelligenza artificiale</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q4-init" value="b" style="width: 20px; height: 20px;">
+                            <span>L'istruzione/domanda che dai all'AI</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q4-init" value="c" style="width: 20px; height: 20px;">
+                            <span>La risposta generata dall'AI</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q4-init" value="d" style="width: 20px; height: 20px;">
+                            <span>Non lo so</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Domanda 5 -->
+                <div class="quiz-question card animate-on-scroll" data-question="5" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--accent-pink); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">5</div>
+                        <h4 style="margin: 0;">ChatGPT puo navigare su internet in tempo reale per trovare prezzi aggiornati?</h4>
+                    </div>
+                    <div class="quiz-options" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q5-init" value="a" style="width: 20px; height: 20px;">
+                            <span>Si, sempre</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q5-init" value="b" style="width: 20px; height: 20px;">
+                            <span>No, di base non naviga (serve Perplexity o Bing per quello)</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q5-init" value="c" style="width: 20px; height: 20px;">
+                            <span>Solo se paghi la versione Pro</span>
+                        </label>
+                        <label class="quiz-option" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s;">
+                            <input type="radio" name="q5-init" value="d" style="width: 20px; height: 20px;">
+                            <span>Non lo so</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pulsante Verifica -->
+                <div style="text-align: center; margin-top: var(--space-8);">
+                    <button id="verifica-quiz-iniziale" class="btn btn-primary" style="font-size: 1.1rem; padding: var(--space-4) var(--space-8);" onclick="verificaQuizIniziale()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        Scopri il Tuo Livello
+                    </button>
+                </div>
+
+                <!-- Risultati (nascosti inizialmente) -->
+                <div id="risultati-quiz-iniziale" style="display: none; margin-top: var(--space-8);">
+                    <div class="card" style="border: 2px solid var(--accent-purple); background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);">
+                        <div style="text-align: center; margin-bottom: var(--space-6);">
+                            <div id="risultato-icona" style="width: 80px; height: 80px; margin: 0 auto var(--space-4); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem;"></div>
+                            <h3 id="risultato-titolo" style="margin-bottom: var(--space-2);"></h3>
+                            <p id="risultato-score" style="color: var(--text-secondary); font-size: 1.1rem;"></p>
+                        </div>
+                        <div id="risultato-messaggio" style="padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg);"></div>
+                        <div style="text-align: center; margin-top: var(--space-6);">
+                            <a href="#modulo1" class="btn btn-primary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                                Inizia il Corso
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- MODULO 1: FONDAMENTA -->
     <section id="modulo1" class="module">
         <div class="container">
@@ -7251,6 +7436,298 @@ TIPS SE LA QUALITA E BASSA:
                         <div style="display: flex; align-items: flex-start; gap: var(--space-3);">
                             <span style="color: var(--accent-cyan); font-weight: 700; font-size: 1.2rem;">6</span>
                             <span style="font-size: 0.9rem;">ROI dimostrato: 31% vendite piu veloci, 77% preferenza clienti per VR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIZ FINALE: VERIFICA APPRENDIMENTO -->
+    <section id="quiz-finale" class="module" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(6, 182, 212, 0.1) 100%);">
+        <div class="container">
+            <div class="module-header animate-on-scroll" style="text-align: center;">
+                <div class="module-badge" style="background: linear-gradient(135deg, var(--success) 0%, var(--accent-cyan) 100%); color: white;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    VERIFICA FINALE
+                </div>
+                <h2 class="module-title">Quanto Hai Imparato?</h2>
+                <p class="module-tagline">10 domande per verificare le competenze acquisite</p>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: var(--space-4);">
+                    Metti alla prova quello che hai imparato durante il corso!
+                </p>
+            </div>
+
+            <div class="quiz-container" id="quiz-finale-container" style="max-width: 800px; margin: 0 auto;">
+
+                <!-- Domanda 1 -->
+                <div class="quiz-question card animate-on-scroll" data-question="1" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--accent-purple); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">1</div>
+                        <h4 style="margin: 0;">Qual e il framework per creare prompt efficaci che abbiamo imparato?</h4>
+                    </div>
+                    <div class="quiz-options-final" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q1-final" value="a" style="width: 20px; height: 20px;">
+                            <span>SMART (Specifico, Misurabile, Achievable, Relevant, Time-bound)</span>
+                        </label>
+                        <label class="quiz-option" data-correct="true" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q1-final" value="b" style="width: 20px; height: 20px;">
+                            <span>RICCA (Ruolo, Istruzioni, Contesto, Constraints, Aspettative)</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q1-final" value="c" style="width: 20px; height: 20px;">
+                            <span>AIDA (Attenzione, Interesse, Desiderio, Azione)</span>
+                        </label>
+                    </div>
+                    <div class="quiz-feedback" style="display: none; margin-top: var(--space-4); padding: var(--space-4); border-radius: var(--radius-lg);"></div>
+                </div>
+
+                <!-- Domanda 2 -->
+                <div class="quiz-question card animate-on-scroll" data-question="2" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--accent-cyan); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">2</div>
+                        <h4 style="margin: 0;">Perche ChatGPT a volte "inventa" dati falsi?</h4>
+                    </div>
+                    <div class="quiz-options-final" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q2-final" value="a" style="width: 20px; height: 20px;">
+                            <span>Perche e programmato per mentire</span>
+                        </label>
+                        <label class="quiz-option" data-correct="true" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q2-final" value="b" style="width: 20px; height: 20px;">
+                            <span>Perche predice token probabili, non verifica la verita dei fatti</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q2-final" value="c" style="width: 20px; height: 20px;">
+                            <span>Perche la versione gratuita ha meno dati</span>
+                        </label>
+                    </div>
+                    <div class="quiz-feedback" style="display: none; margin-top: var(--space-4); padding: var(--space-4); border-radius: var(--radius-lg);"></div>
+                </div>
+
+                <!-- Domanda 3 -->
+                <div class="quiz-question card animate-on-scroll" data-question="3" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">3</div>
+                        <h4 style="margin: 0;">Quale strumento e migliore per cercare dati di mercato AGGIORNATI?</h4>
+                    </div>
+                    <div class="quiz-options-final" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q3-final" value="a" style="width: 20px; height: 20px;">
+                            <span>ChatGPT standard</span>
+                        </label>
+                        <label class="quiz-option" data-correct="true" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q3-final" value="b" style="width: 20px; height: 20px;">
+                            <span>Perplexity (cerca in tempo reale con fonti)</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q3-final" value="c" style="width: 20px; height: 20px;">
+                            <span>Midjourney</span>
+                        </label>
+                    </div>
+                    <div class="quiz-feedback" style="display: none; margin-top: var(--space-4); padding: var(--space-4); border-radius: var(--radius-lg);"></div>
+                </div>
+
+                <!-- Domanda 4 -->
+                <div class="quiz-question card animate-on-scroll" data-question="4" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--warning); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">4</div>
+                        <h4 style="margin: 0;">La tecnica "Few-Shot Learning" consiste in:</h4>
+                    </div>
+                    <div class="quiz-options-final" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" data-correct="true" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q4-final" value="a" style="width: 20px; height: 20px;">
+                            <span>Fornire 2-3 esempi prima di chiedere un nuovo output</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q4-final" value="b" style="width: 20px; height: 20px;">
+                            <span>Fare poche domande per risparmiare token</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q4-final" value="c" style="width: 20px; height: 20px;">
+                            <span>Usare prompt molto brevi</span>
+                        </label>
+                    </div>
+                    <div class="quiz-feedback" style="display: none; margin-top: var(--space-4); padding: var(--space-4); border-radius: var(--radius-lg);"></div>
+                </div>
+
+                <!-- Domanda 5 -->
+                <div class="quiz-question card animate-on-scroll" data-question="5" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--accent-pink); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">5</div>
+                        <h4 style="margin: 0;">Quale tool NON e adatto per creare rendering di interni?</h4>
+                    </div>
+                    <div class="quiz-options-final" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q5-final" value="a" style="width: 20px; height: 20px;">
+                            <span>REimagine Home</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q5-final" value="b" style="width: 20px; height: 20px;">
+                            <span>Virtual Staging AI</span>
+                        </label>
+                        <label class="quiz-option" data-correct="true" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q5-final" value="c" style="width: 20px; height: 20px;">
+                            <span>Perplexity</span>
+                        </label>
+                    </div>
+                    <div class="quiz-feedback" style="display: none; margin-top: var(--space-4); padding: var(--space-4); border-radius: var(--radius-lg);"></div>
+                </div>
+
+                <!-- Domanda 6 -->
+                <div class="quiz-question card animate-on-scroll" data-question="6" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--accent-purple); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">6</div>
+                        <h4 style="margin: 0;">Per una proposta di frazionamento immobiliare, cosa devo includere nel prompt?</h4>
+                    </div>
+                    <div class="quiz-options-final" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q6-final" value="a" style="width: 20px; height: 20px;">
+                            <span>Solo il prezzo dell'immobile</span>
+                        </label>
+                        <label class="quiz-option" data-correct="true" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q6-final" value="b" style="width: 20px; height: 20px;">
+                            <span>Metratura, layout, potenziale divisione, costi stimati, target acquirenti</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q6-final" value="c" style="width: 20px; height: 20px;">
+                            <span>Il nome del proprietario e il codice fiscale</span>
+                        </label>
+                    </div>
+                    <div class="quiz-feedback" style="display: none; margin-top: var(--space-4); padding: var(--space-4); border-radius: var(--radius-lg);"></div>
+                </div>
+
+                <!-- Domanda 7 -->
+                <div class="quiz-question card animate-on-scroll" data-question="7" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--accent-cyan); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">7</div>
+                        <h4 style="margin: 0;">La tecnica "Self-Verification" serve a:</h4>
+                    </div>
+                    <div class="quiz-options-final" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" data-correct="true" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q7-final" value="a" style="width: 20px; height: 20px;">
+                            <span>Chiedere all'AI di verificare e correggere il proprio output</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q7-final" value="b" style="width: 20px; height: 20px;">
+                            <span>Verificare la propria identita su ChatGPT</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q7-final" value="c" style="width: 20px; height: 20px;">
+                            <span>Autenticare l'account con 2FA</span>
+                        </label>
+                    </div>
+                    <div class="quiz-feedback" style="display: none; margin-top: var(--space-4); padding: var(--space-4); border-radius: var(--radius-lg);"></div>
+                </div>
+
+                <!-- Domanda 8 -->
+                <div class="quiz-question card animate-on-scroll" data-question="8" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">8</div>
+                        <h4 style="margin: 0;">Per creare un tour VR di un immobile, il primo passo e:</h4>
+                    </div>
+                    <div class="quiz-options-final" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q8-final" value="a" style="width: 20px; height: 20px;">
+                            <span>Comprare un visore Meta Quest</span>
+                        </label>
+                        <label class="quiz-option" data-correct="true" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q8-final" value="b" style="width: 20px; height: 20px;">
+                            <span>Catturare il 3D dell'immobile con Luma AI, Polycam o Matterport</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q8-final" value="c" style="width: 20px; height: 20px;">
+                            <span>Creare un rendering 2D con Midjourney</span>
+                        </label>
+                    </div>
+                    <div class="quiz-feedback" style="display: none; margin-top: var(--space-4); padding: var(--space-4); border-radius: var(--radius-lg);"></div>
+                </div>
+
+                <!-- Domanda 9 -->
+                <div class="quiz-question card animate-on-scroll" data-question="9" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--warning); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">9</div>
+                        <h4 style="margin: 0;">Un "Red Flag" che indica che l'AI potrebbe star inventando e:</h4>
+                    </div>
+                    <div class="quiz-options-final" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q9-final" value="a" style="width: 20px; height: 20px;">
+                            <span>Risponde in italiano corretto</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q9-final" value="b" style="width: 20px; height: 20px;">
+                            <span>Usa elenchi puntati</span>
+                        </label>
+                        <label class="quiz-option" data-correct="true" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q9-final" value="c" style="width: 20px; height: 20px;">
+                            <span>Fornisce numeri molto precisi senza citare fonti</span>
+                        </label>
+                    </div>
+                    <div class="quiz-feedback" style="display: none; margin-top: var(--space-4); padding: var(--space-4); border-radius: var(--radius-lg);"></div>
+                </div>
+
+                <!-- Domanda 10 -->
+                <div class="quiz-question card animate-on-scroll" data-question="10" style="margin-bottom: var(--space-6);">
+                    <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                        <div style="width: 40px; height: 40px; background: var(--accent-pink); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">10</div>
+                        <h4 style="margin: 0;">Quando NON dovresti usare l'AI per il lavoro in agenzia?</h4>
+                    </div>
+                    <div class="quiz-options-final" style="display: flex; flex-direction: column; gap: var(--space-3);">
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q10-final" value="a" style="width: 20px; height: 20px;">
+                            <span>Per scrivere annunci immobiliari</span>
+                        </label>
+                        <label class="quiz-option" data-correct="false" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q10-final" value="b" style="width: 20px; height: 20px;">
+                            <span>Per generare email di follow-up</span>
+                        </label>
+                        <label class="quiz-option" data-correct="true" style="display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); cursor: pointer; transition: all 0.2s; border: 2px solid transparent;">
+                            <input type="radio" name="q10-final" value="c" style="width: 20px; height: 20px;">
+                            <span>Per consulenze legali/fiscali e valutazioni ufficiali</span>
+                        </label>
+                    </div>
+                    <div class="quiz-feedback" style="display: none; margin-top: var(--space-4); padding: var(--space-4); border-radius: var(--radius-lg);"></div>
+                </div>
+
+                <!-- Pulsante Verifica -->
+                <div style="text-align: center; margin-top: var(--space-8);">
+                    <button id="verifica-quiz-finale" class="btn btn-primary" style="font-size: 1.1rem; padding: var(--space-4) var(--space-8);" onclick="verificaQuizFinale()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        Verifica le Risposte
+                    </button>
+                </div>
+
+                <!-- Risultati Finali -->
+                <div id="risultati-quiz-finale" style="display: none; margin-top: var(--space-8);">
+                    <div class="card" style="border: 2px solid var(--success); background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);">
+                        <div style="text-align: center; margin-bottom: var(--space-6);">
+                            <div id="risultato-finale-icona" style="width: 100px; height: 100px; margin: 0 auto var(--space-4); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem;"></div>
+                            <h2 id="risultato-finale-titolo" style="margin-bottom: var(--space-2);"></h2>
+                            <p id="risultato-finale-score" style="color: var(--text-secondary); font-size: 1.3rem; font-weight: 600;"></p>
+                        </div>
+                        <div id="risultato-finale-messaggio" style="padding: var(--space-4); background: var(--bg-tertiary); border-radius: var(--radius-lg); margin-bottom: var(--space-6);"></div>
+
+                        <!-- Confronto Pre/Post -->
+                        <div id="confronto-pre-post" style="padding: var(--space-4); background: rgba(139, 92, 246, 0.1); border-radius: var(--radius-lg); border: 1px solid rgba(139, 92, 246, 0.3);">
+                            <h4 style="margin-bottom: var(--space-4); color: var(--accent-purple); text-align: center;">Il Tuo Percorso di Apprendimento</h4>
+                            <div style="display: flex; justify-content: center; align-items: center; gap: var(--space-6); flex-wrap: wrap;">
+                                <div style="text-align: center;">
+                                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: var(--space-2);">Quiz Iniziale</div>
+                                    <div id="score-iniziale-display" style="font-size: 2rem; font-weight: 700; color: var(--warning);">-</div>
+                                </div>
+                                <div style="font-size: 2rem; color: var(--accent-purple);">→</div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: var(--space-2);">Quiz Finale</div>
+                                    <div id="score-finale-display" style="font-size: 2rem; font-weight: 700; color: var(--success);">-</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
