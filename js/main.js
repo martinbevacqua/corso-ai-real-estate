@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========================================
     const observerOptions = {
         root: null,
-        rootMargin: '0px',
+        rootMargin: '50px',
         threshold: 0.1
     };
 
@@ -138,6 +138,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        // Check if element is already in viewport on page load
+        const rect = el.getBoundingClientRect();
+        const isInViewport = (
+            rect.top < window.innerHeight &&
+            rect.bottom > 0 &&
+            rect.left < window.innerWidth &&
+            rect.right > 0
+        );
+
+        if (isInViewport) {
+            // Element already visible - add class immediately
+            el.classList.add('visible');
+        }
+
+        // Also observe for future scroll events
         observer.observe(el);
     });
 
